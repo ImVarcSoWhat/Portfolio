@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tooltip</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <style>
+        body {
+            text-align: center;
+            background-color: #2b2b2b;
+        }
+
+        h1 {
+            color: #3d1970;
+            padding: 1%;
+            align-items: center;
+            width: fit-content  ;
+            background: #111;
+        border: #2b2b2b;
+        }
+
+        .tooltip-inner {
+            width: auto;
+            height: auto;
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 data-toggle="tooltip" title="the name in here is varc">
+            Varc UNU
+        </h1>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</body>
+
+</html>
